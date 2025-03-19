@@ -5,12 +5,17 @@ import reportWebVitals from './reportWebVitals';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 //Components
-import BootstrapExample from './Components/BootstrapExample';
-import SampleComponent from './Components/FunctionalComponent';
-import ClassComponent from './Components/ClassComponent';
-import UsingFetch from './Components/Map';
-import LifeCycle from './Components/LifeCycle';
-import ArrayObjects from './Components/Objects';
+// import BootstrapExample from './Components/BootstrapExample';
+// import SampleComponent from './Components/FunctionalComponent';
+// import ClassComponent from './Components/ClassComponent';
+// import UsingFetch from './Components/Map';
+// import LifeCycle from './Components/LifeCycle';
+// import ArrayObjects from './Components/Objects';
+ import List from './Components/List';
+// import ArrayFunctions from './Components/ArrayFunctions';
+
+//import Timer from './Components/SideEffects';
+//import User from './Components/SideEffects';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -21,9 +26,15 @@ root.render(
 
     {/* <UsingFetch/> */}
 
-    <LifeCycle/>
+    {/* <LifeCycle/> */}
 
     {/* <ArrayObjects/> */}
+
+    <List/>
+
+    {/* <ArrayFunctions/> */}
+    {/* <Timer/> */}
+    {/* <User name="Side Effects"/> */}
   </React.StrictMode>
 );
 
