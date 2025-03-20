@@ -26,6 +26,7 @@ const ArrayObjects = () => {
       <h2>User Status</h2>
       <ul>
         {users.map((user) => (
+          //color:green
           <li key={user.id} style={{color:statusColor[user.status]}}>
             {user.name} - {statusName[user.status] }
           </li>
