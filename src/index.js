@@ -8,34 +8,50 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import BootstrapExample from './Components/BootstrapExample';
 // import SampleComponent from './Components/FunctionalComponent';
 // import ClassComponent from './Components/ClassComponent';
- import UsingFetch from './Components/Map';
+import UsingFetch from "./Components/Map";
 // import LifeCycle from './Components/LifeCycle';
- import ArrayObjects from './Components/Objects';
+import ArrayObjects from "./Components/Objects";
 //import List from "./Components/List";
 import Events from "./Components/Events";
- import ArrayFunctions from './Components/ArrayFunctions';
-
+import ArrayFunctions from "./Components/ArrayFunctions";
+import UserToggle from "./Components/MapJson";
 //import Timer from './Components/SideEffects';
 //import User from './Components/SideEffects';
+import PersonList from "./Components/Axios";
+import AxiosCRUD from "./Components/AxiosCrud";
+import AwaitAsync from "./Components/AxiosAwaitAsync";
+import AxiosuseAxios from "./Components/useAxios";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    {/* COMPONENTS */}
+
     {/* <BootstrapExample/>
     <SampleComponent name="John" designation="Developer"/>
     <ClassComponent/> */}
-
-    {/* <UsingFetch/> */}
-
     {/* <LifeCycle/> */}
 
-    {/* <ArrayObjects/> */}
+    {/* MAP FUNCTION */}
 
+    {/* <UsingFetch/> */}
+    {/* <ArrayObjects/> */}
     {/* <List/> */}
-    <Events />
     {/* <ArrayFunctions/> */}
+
+    {/* useEffect Hook */}
+
     {/* <Timer/> */}
     {/* <User name="Side Effects"/> */}
+    {/* MAP JSON */}
+
+    {/* AXIOS  */}
+
+    <UserToggle />
+    {/* <PersonList/> */}
+    {/* <AxiosCRUD /> */}
+    {/* <AwaitAsync /> */}
+    {/* <AxiosuseAxios /> */}
   </React.StrictMode>
 );
 
