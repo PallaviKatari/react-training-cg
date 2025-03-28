@@ -9,14 +9,19 @@ const AxiosCRUD = () => {
 
   // Fetch Data (Read)
   useEffect(() => {
-    axios.get(API_URL)
-      .then((response) => setPosts(response.data))
+    axios
+      .get(API_URL)
+      .then((response) => {
+        console.log("API Response:", response.data); // Log response data
+        setPosts(response.data);
+      })
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
   // Create a Post
   const createPost = () => {
-    axios.post(API_URL, newPost)
+    axios
+      .post(API_URL, newPost)
       .then((response) => {
         setPosts([...posts, response.data]);
         setNewPost({ title: "", body: "" });
@@ -26,9 +31,10 @@ const AxiosCRUD = () => {
 
   // Update a Post
   const updatePost = (id) => {
-    axios.put(`${API_URL}/${id}`, { ...newPost, id })
+    axios
+      .put(`${API_URL}/${id}`, { ...newPost, id })
       .then((response) => {
-        setPosts(posts.map((post) => (post.id === id ? response.data : post)));//3===3
+        setPosts(posts.map((post) => (post.id === id ? response.data : post))); //3===3
         setNewPost({ title: "", body: "" });
       })
       .catch((error) => console.error("Error updating post:", error));
@@ -36,7 +42,8 @@ const AxiosCRUD = () => {
 
   // Delete a Post
   const deletePost = (id) => {
-    axios.delete(`${API_URL}/${id}`)
+    axios
+      .delete(`${API_URL}/${id}`)
       .then(() => setPosts(posts.filter((post) => post.id !== id)))
       .catch((error) => console.error("Error deleting post:", error));
   };

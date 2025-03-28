@@ -20,7 +20,10 @@ import UserToggle from "./Components/MapJson";
 import PersonList from "./Components/Axios";
 import AxiosCRUD from "./Components/AxiosCrud";
 import AwaitAsync from "./Components/AxiosAwaitAsync";
-import AxiosuseAxios from "./Components/useAxios";
+import AxiosDemo from "./Components/useAxios";
+import ReactHooks from "./Components/ReactHooks";
+import RenderProps from "./Components/RenderProps";
+import AxiosHookCRUD from "./Components/useAxiosCrud";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -47,11 +50,18 @@ root.render(
 
     {/* AXIOS  */}
 
-    <UserToggle />
+    {/* <UserToggle /> */}
     {/* <PersonList/> */}
     {/* <AxiosCRUD /> */}
     {/* <AwaitAsync /> */}
-    {/* <AxiosuseAxios /> */}
+    <AxiosDemo />
+    <AxiosHookCRUD/>
+
+    {/* REACT HOOKS */}
+    <ReactHooks/>
+
+    {/* RENDER PROPS */}
+    <RenderProps/>
   </React.StrictMode>
 );
 
