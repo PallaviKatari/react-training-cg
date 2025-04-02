@@ -24,6 +24,11 @@ import AxiosDemo from "./Components/useAxios";
 import ReactHooks from "./Components/ReactHooks";
 import RenderProps from "./Components/RenderProps";
 import AxiosHookCRUD from "./Components/useAxiosCrud";
+import Rooks from "./Components/Rooks";
+import SignDemo from "./Components/SignaturePad";
+import Theme from "./Components/Theme";
+import Sort from "./Components/Sort";
+import TodosItems from "./Components/TodoHOC";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -41,6 +46,7 @@ root.render(
     {/* <ArrayObjects/> */}
     {/* <List/> */}
     {/* <ArrayFunctions/> */}
+    <Sort />
 
     {/* useEffect Hook */}
 
@@ -54,14 +60,19 @@ root.render(
     {/* <PersonList/> */}
     {/* <AxiosCRUD /> */}
     {/* <AwaitAsync /> */}
-    <AxiosDemo />
-    <AxiosHookCRUD/>
+    {/* <AxiosDemo />
+    <AxiosHookCRUD/> */}
 
     {/* REACT HOOKS */}
-    <ReactHooks/>
-
+    {/* <ReactHooks/> */}
+    <Theme />
+    <Rooks />
+    {/* HIGHER ORDER COMPONENTS */}
+    <TodosItems/>
     {/* RENDER PROPS */}
-    <RenderProps/>
+    {/* <RenderProps/> */}
+
+    {/* < SignDemo/> */}
   </React.StrictMode>
 );
 
