@@ -29,6 +29,10 @@ import SignDemo from "./Components/SignaturePad";
 import Theme from "./Components/Theme";
 import Sort from "./Components/Sort";
 import TodosItems from "./Components/TodoHOC";
+import RegistrationForm from "./Components/Registration";
+import Callback from "./Components/Callback";
+import Memo from "./Components/Memo";
+import HookForm from "./Components/ReactHookForm";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -46,7 +50,7 @@ root.render(
     {/* <ArrayObjects/> */}
     {/* <List/> */}
     {/* <ArrayFunctions/> */}
-    <Sort />
+    {/* <Sort /> */}
 
     {/* useEffect Hook */}
 
@@ -65,14 +69,22 @@ root.render(
 
     {/* REACT HOOKS */}
     {/* <ReactHooks/> */}
-    <Theme />
-    <Rooks />
+    {/* <Theme />
+    <Rooks /> */}
+    {/* <Callback/> */}
+    {/* <Memo/> */}
+
     {/* HIGHER ORDER COMPONENTS */}
-    <TodosItems/>
+    {/* <TodosItems/> */}
+
     {/* RENDER PROPS */}
     {/* <RenderProps/> */}
 
     {/* < SignDemo/> */}
+
+    {/* FORMS */}
+    <RegistrationForm/>
+    <HookForm/>
   </React.StrictMode>
 );
 
